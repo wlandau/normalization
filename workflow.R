@@ -23,11 +23,7 @@ summaries = commands(
 )
 
 output = commands(
-  "fig/calibration_error.pdf" = plot_cal_error(calibration),
-  "fig/auc.pdf" = plot_auc(roc),
-  "fig/calibration.pdf" = plot_calibration(calibration),
-  "fig/mse.pdf" = plot_mse(mse),
-  "fig/roc.pdf" = plot_roc(roc)
+  report.md = ..knitr..
 )
 
 plan_workflow(sources = sources, packages = packages, datasets = datasets,
