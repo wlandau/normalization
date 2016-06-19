@@ -8,3 +8,5 @@ This repo uses the [`workflowHelper`](https://github.com/wlandau/workflowHelper)
 2. Optionally, configure simulation parameters with the small functions in `config.R`.
 3. Run `make`. If you're on a cluster, you can do this through `slurm.sh` for [Slurm](https://en.wikipedia.org/wiki/Slurm_Workload_Manager) clusters or 
 `pbs.sh` for [PBS](https://en.wikipedia.org/wiki/Portable_Batch_System) clusters.
+
+The LaTeX report relies on the figures in `fig/` and is compiled separately. 
