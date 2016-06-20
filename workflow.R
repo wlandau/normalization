@@ -23,7 +23,7 @@ summaries = commands(
 )
 
 output = commands(
-  report.md = ..knitr..
+  report.md = ..knitr.. <- list(fig.width = 9)
 )
 
 plan_workflow(sources = sources, packages = packages, datasets = datasets,

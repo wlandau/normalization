@@ -1,23 +1,24 @@
 ```{r}
-psrf
+library(workflowHelper)
+recall("psrf")
 ```
 
 ```{r}
-plot_mse(mse)
+plot_mse(recall("mse"))
 ```
 
 ```{r}
-plot_roc(roc)
+plot_roc(recall("roc"))
 ```
 
 ```{r}
-plot_auc(roc)
+plot_auc(recall("roc"))
 ```
 
 ```{r}
-plot_calibration(calibration)
+plot_calibration(recall("calibration"))
 ```
 
 ```{r}
-plot_cal_error(calibration)
+plot_cal_error(recall("calibration"))
 ```
