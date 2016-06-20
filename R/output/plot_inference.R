@@ -22,7 +22,7 @@ plot_cal_error = function(cal){
     ylab("calibration error") + 
     mytheme() + 
     theme(axis.text.x = element_text(angle = -80, hjust = 0))
-  ggsave("fig/calibration_error.pdf", pl, dpi = 1200, width = 11, height = 7)
+  ggsave("fig/calibration_error.pdf", pl, width = 11, height = 7)
 }
 
 # plot areas under roc curves
@@ -38,7 +38,7 @@ plot_auc = function(roc){
     ylab("area under roc curve") + 
     mytheme() + 
     theme(axis.text.x = element_text(angle = -80, hjust = 0))
-  ggsave("fig/auc.pdf", pl, dpi = 1200, width = 11, height = 7)
+  ggsave("fig/auc.pdf", pl, width = 11, height = 7)
 }
 
 # plot calibration curves
@@ -58,7 +58,7 @@ plot_calibration = function(cal){
       values = mycolors[1:length(unique(d$analysis))]) +
     mytheme() + 
     theme(axis.text.x = element_text(angle = -80, hjust = 0))
-  ggsave("fig/calibration.pdf", pl, dpi = 1200, width = 11, height = 7)
+  ggsave("fig/calibration.pdf", pl, width = 11, height = 7)
 }
 
 # plot roc curves
@@ -76,5 +76,5 @@ plot_roc = function(roc){
       values = mycolors[1:length(unique(d$analysis))]) +
     mytheme() + 
     theme(axis.text.x = element_text(angle = -80, hjust = 0))
-  ggsave("fig/roc.pdf", pl, dpi = 1200, width = 11, height = 7)
+  ggsave("fig/roc.pdf", pl, width = 11, height = 7)
 }

@@ -16,5 +16,5 @@ plot_mse = function(mse){
     ylab("mean squared error") + 
     mytheme() + 
     theme(axis.text.x = element_text(angle = -80, hjust = 0))
-  ggsave("fig/mse.pdf", pl, dpi = 1200, width = 9, height = 7)
+  ggsave("fig/mse.pdf", pl, width = 9, height = 7)
 }
