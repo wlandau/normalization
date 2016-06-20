@@ -23,7 +23,11 @@ summaries = commands(
 )
 
 output = commands(
-  report.md = ..knitr.. <- list(fig.width = 9)
+  "fig/calibration_error.pdf" = plot_cal_error(calibration),
+  "fig/auc.pdf" = plot_auc(roc),
+  "fig/calibration.pdf" = plot_calibration(calibration),
+  "fig/mse.pdf" = plot_mse(mse),
+  "fig/roc.pdf" = plot_roc(roc)
 )
 
 plan_workflow(sources = sources, packages = packages, datasets = datasets,
